@@ -43,9 +43,8 @@
 		20F9BD2926A72D5D00A33C1F /* TSLogEventConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */; };
 		20F9BD2D26A72D5E00A33C1F /* TSLogEventConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */; };
 		20F9BD4C26A746E100A33C1F /* Logger+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */; };
-		68597FC326CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68597FC226CA302D0039FCE9 /* SplunkMint.xcframework */; };
-		68597FC426CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68597FC226CA302D0039FCE9 /* SplunkMint.xcframework */; };
-		68597FC526CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68597FC226CA302D0039FCE9 /* SplunkMint.xcframework */; };
+		68C05CEA26CBE2BF00E46188 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C05CE926CBE2BF00E46188 /* SplunkMint.xcframework */; };
+		68C05CEB26CBE2BF00E46188 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C05CE926CBE2BF00E46188 /* SplunkMint.xcframework */; };
 		D72678201DE36729007881FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D726781E1DE36729007881FC /* Main.storyboard */; };
 		D72678221DE36729007881FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72678211DE36729007881FC /* Assets.xcassets */; };
 		D72678251DE36729007881FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72678231DE36729007881FC /* LaunchScreen.storyboard */; };
@@ -94,7 +93,7 @@
 		20C75F472655A7C70083846F /* DynatraceConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynatraceConfigTests.swift; sourceTree = "<group>"; };
 		20F9BD2126A72C5600A33C1F /* TSLogEventConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLogEventConstants.swift; sourceTree = "<group>"; };
 		20F9BD4B26A746E100A33C1F /* Logger+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Statistics.swift"; sourceTree = "<group>"; };
-		68597FC226CA302D0039FCE9 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
+		68C05CE926CBE2BF00E46188 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 		D72678131DE36728007881FC /* TSLogEventSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSLogEventSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D726781F1DE36729007881FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D72678211DE36729007881FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				093BEED826BDDAB000FA6FC6 /* CoreLocation.framework in Frameworks */,
-				68597FC426CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */,
+				68C05CEB26CBE2BF00E46188 /* SplunkMint.xcframework in Frameworks */,
 				093BEED626BDDAAA00FA6FC6 /* SystemConfiguration.framework in Frameworks */,
 				093BEED426BDDAA500FA6FC6 /* WebKit.framework in Frameworks */,
 				093BEECF26BDDA9300FA6FC6 /* CoreTelephony.framework in Frameworks */,
@@ -122,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68597FC526CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68597FC326CA302D0039FCE9 /* SplunkMint.xcframework in Frameworks */,
+				68C05CEA26CBE2BF00E46188 /* SplunkMint.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +156,7 @@
 		68D6E22CACDCA1FB5807D8D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68597FC226CA302D0039FCE9 /* SplunkMint.xcframework */,
+				68C05CE926CBE2BF00E46188 /* SplunkMint.xcframework */,
 				093BEED726BDDAB000FA6FC6 /* CoreLocation.framework */,
 				093BEED526BDDAAA00FA6FC6 /* SystemConfiguration.framework */,
 				093BEED326BDDAA500FA6FC6 /* WebKit.framework */,
@@ -469,6 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/SplunkMint.xcframework/ios-arm64_i386_x86_64-simulator\"";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TSLogEvent/TSLogEvent-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -493,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.titlesource.TSLogEventSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/SplunkMint.xcframework/ios-arm64_armv7\"";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TSLogEvent/TSLogEvent-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

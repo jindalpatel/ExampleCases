@@ -39,6 +39,8 @@ public class TSLogEvent: NSObject {
     @objc public static func logEvent(_ eventName: String) {
         logEvent(eventName: eventName, parameters: nil, shouldIncludeAnalytics: true, shouldIncludeCrashReporting: false)
         logToOtherSDK(username: nil, eventName: eventName, error: nil)
+        let confir = SplunkMintConfig.init(hecURL: "ddfsfsd", token: "Token_retf", appEvironment: Environment.dev)
+        self.addSplunk(confir)
     }
     
     /// Event name should be an NSString that is no more than 40 characters long. Text will be truncated at 40 characters. action should be no more than 100 characters.

@@ -6,7 +6,7 @@ platform :ios, '12.0'
 target 'TSLogEvent' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   use_modular_headers!
-  use_framework!
+  use_frameworks!
 
   pod 'Firebase/Crashlytics', '~> 8.2.0'
   pod 'Firebase/Analytics', '~> 8.2.0'
